@@ -1,0 +1,39 @@
+/*---------------Global Styles---------------*/
+body {
+    background: #222 !important;
+    color: #fff !important;
+    line-height: 1.7;
+}
+
+h1 {
+    text-align: center;
+}
+
+.col-center {
+    align-items: center;
+}
+
+.row-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: none !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+/*---------------Homepage Styles---------------*/
+/* Intro */
+.intro {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 280px;
+    width: auto;
+}
