@@ -7,12 +7,26 @@ import profilePic from '../../assets/images/profile-pic.jpg';
 const Intro = () => {
 
     return (
-        <Container className='section intro'>
-            <Row className='row-center'>
-                <Col className='col-center'>
-                    <img className='profile-pic' src={profilePic} alt='Profile Picture' />
-                    <h1 className='jb-h1-light'>Jason Barrera</h1>
-                    <p className='jb-paragraph-light'>Software Developer</p>
+        <Container className='section hero'>
+            <Row className='full-width-row hero-main-row'>
+                <Col lg={4} xs={12} className='col-center profile-pic-col'>
+                    <div className='profile-pic-wrap'>
+                        <div className='profile-pic'></div>
+                    </div>
+                </Col>
+                <Col className='hero-info'>
+                    <h1 className='h1-light hero-h1'>Jason Barrera</h1>
+                    <p className='paragraph-light hero-p'>Software Developer</p>
+                    <Row className='contact-info'>
+                        <Col className='phone' lg={6}>
+                            <p>Phone</p>
+                            <h3>+1(312)909-7515</h3>
+                        </Col>
+                        <Col className='email' lg={6}>
+                            <p>Email</p>
+                            <h3>jason.barrera.94@gmail.com</h3>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>

@@ -1,7 +1,7 @@
 /*---------------Global Styles---------------*/
 body {
-    background: #222 !important;
-    color: #fff !important;
+    background: #fff !important;
+    color: #000 !important;
     line-height: 1.7;
 }
 
@@ -9,8 +9,19 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-size: 20px !important;
+}
+
+.full-width-row {
+    width: 100%;
+}
+
 .col-center {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .row-center {
@@ -26,14 +37,63 @@ h1 {
 
 /*---------------Homepage Styles---------------*/
 /* Intro */
-.intro {
-    height: 500px;
+.hero {
     display: flex;
+    padding: 40px;
     justify-content: center;
     align-items: center;
+    background: rgb(255,191,83);
+    background: linear-gradient(to bottom left, rgba(255,191,83,1) 0%, rgba(255,150,83,1) 20%, rgba(255,133,83,1) 100%);
+    color: #fff;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-h1 {
+    font-size: 70px;
+}
+
+.hero-p {
+    font-size: 30px;
+    color: #000;
+}
+
+.profile-pic-wrap {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .profile-pic {
-    height: 280px;
-    width: auto;
+    background-image: url("/profile-pic.jpg");
+    background-size: 280px;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+}
+
+@media (min-width: 575px) {
+    .hero {
+        height: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-h1 {
+        font-size: 27px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .hero-info,
+    .phone,
+    .email {
+        align-items: center;
+        text-align: center;
+    }
 }
