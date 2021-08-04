@@ -9,18 +9,33 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    font-size: 40px !important;
+}
+
 h3 {
     font-size: 20px !important;
 }
 
 .full-width-row {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 60px;
 }
 
 .col-center {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -33,6 +48,10 @@ h3 {
     max-width: none !important;
     padding-right: 0px !important;
     padding-left: 0px !important;
+}
+
+.section-header {
+    margin-bottom: 40px;
 }
 
 /*---------------Homepage Styles---------------*/
@@ -52,6 +71,10 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.hero-main-row {
+    width: 100%;
 }
 
 .hero-h1 {
@@ -96,4 +119,21 @@ h3 {
         align-items: center;
         text-align: center;
     }
+}
+
+/* Skills */
+.skills-top-row {
+    border-bottom: 1px solid #efefef;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    padding-top: 40px;
+}
+
+.skill-1, .skill-2, .skill-4, .skill-5 {
+    border-right: 1px solid #efefef;
 }

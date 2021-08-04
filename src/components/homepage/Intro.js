@@ -1,14 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import profilePic from '../../assets/images/profile-pic.jpg';
-
 
 const Intro = () => {
 
     return (
         <Container className='section hero'>
-            <Row className='full-width-row hero-main-row'>
+            <Row className='hero-main-row'>
                 <Col lg={4} xs={12} className='col-center profile-pic-col'>
                     <div className='profile-pic-wrap'>
                         <div className='profile-pic'></div>
